@@ -19,19 +19,37 @@ class Test_001_Pharmacy:
         self.driver.get(self.baseurl)
         self.driver.maximize_window()
         self.lp = LoginPage(self.driver)
-        time.sleep(3)
+        time.sleep(6)
         self.lp.started()
-        time.sleep(3)
+        time.sleep(6)
         self.lp.startedLogin()
         self.lp.setEmail(self.email)
         self.lp.setPassword(self.password)
         self.lp.clickLogin()
-        time.sleep(3)
+        time.sleep(6)
         self.lp.setAddress(self.address)
-        time.sleep(5)
+        time.sleep(6)
         self.pp = PharmacyPage(self.driver)
-        time.sleep(3)
+        time.sleep(6)
         self.pp.pharmacy()
+        time.sleep(7)
+        self.pp.setPharmacy()
+        time.sleep(12)
+        self.pp.clickMenu()
+        # time.sleep(12)
+        # self.pp.selectMenu()
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
