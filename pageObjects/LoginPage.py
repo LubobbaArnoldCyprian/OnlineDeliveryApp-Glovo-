@@ -40,6 +40,8 @@ class LoginPage:
         address_field.clear()
         address_field.send_keys(address)
         time.sleep(5)
+
+        #selection of the address from the drop down suggestions
         address_field.send_keys(Keys.ARROW_DOWN)
         time.sleep(5)
         address_field.send_keys(Keys.ARROW_DOWN)
