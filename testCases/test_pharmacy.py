@@ -32,13 +32,27 @@ class Test_001_Pharmacy:
         self.pp = PharmacyPage(self.driver)
         time.sleep(6)
         self.pp.pharmacy()
-        time.sleep(7)
+        time.sleep(15)
         self.pp.setPharmacy()
         time.sleep(12)
         self.pp.clickMenu()
-        time.sleep(5)
+        time.sleep(15)
         self.pp.selectMenu()
-        time.sleep(60)
+        time.sleep(20)
+        self.pp.selectItem()
+        time.sleep(9)
+        self.pp.addItem()
+        time.sleep(8)
+        self.pp.checkOut()
+        #self.pp.locationFloor()
+        time.sleep(5)
+        self.pp.confirmAddress()
+
+
+
+
+
+
 
 
 
