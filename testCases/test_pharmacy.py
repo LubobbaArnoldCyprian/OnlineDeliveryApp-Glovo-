@@ -36,8 +36,11 @@ class Test_001_Pharmacy:
         self.pp.setPharmacy()
         time.sleep(12)
         self.pp.clickMenu()
-        # time.sleep(12)
-        # self.pp.selectMenu()
+        time.sleep(5)
+        self.pp.selectMenu()
+        time.sleep(60)
+
+
 
 
 
