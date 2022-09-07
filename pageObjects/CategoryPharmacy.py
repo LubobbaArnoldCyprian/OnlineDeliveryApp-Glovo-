@@ -10,11 +10,14 @@ class PharmacyPage:
     pharmacy_select_xpath = "//a[@href='/ug/en/kampala/farak-pharmacy-kpa/']"
     pharmacy_menu_xpath = "//mark[normalize-space()='Menu']"
     menu_selection_xpath = "//a[.='Condoms']"
-    item_selected_xpath = "//body[contains(.,'Durex')]"
+    item_selected_xpath = "//body[contains(., 'Durex')]"
     add_product_xpath = "//button[@data-test-id='add-button']"
     checkout_xpath = "//button[@data-test-id='checkout-button']"
     #textbox_location_xpath = "//ul[@id='el-autocomplete-3229']"
-    comfirm_address_xpath = "//button[@data-test-id='location-form-submit-button']"
+    confirm_address_xpath = "//button[@data-test-id='location-form-submit-button']"
+    #// body[contains(., 'Durex')]
+    #//body/div[contains(.,'Durex')]
+    #//a[contains(.,'Durex')]
 
     def __init__(self, driver):
         self.driver = driver
@@ -47,7 +50,7 @@ class PharmacyPage:
     #     textbox_location.send_keys(floor)
 
     def confirmAddress(self):
-        self.driver.find_element(By.XPATH, self.comfirm_address_xpath).click()
+        self.driver.find_element(By.XPATH, self.confirm_address_xpath).click()
 
 
 
